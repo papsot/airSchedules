@@ -1,0 +1,14 @@
+{
+  "name": "airSchedules",
+  "app_id": "",
+  "gulpStartupTasks": [
+    "babel",
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
+}
