@@ -7,18 +7,17 @@
         '$stateProvider',
         '$urlRouterProvider'
     ];
-        
-        
+
     function appConfiguration($stateProvider, $urlRouterProvider) {
 
-        $urlRouterProvider.otherwise('/');
+        $urlRouterProvider.otherwise('/login');
         
-        $stateProvider.state('login', {
-            url: '/',
-            templateUrl: 'app/login/login.html',
-            controller: 'loginController',
-            controllerAs: 'loginCtrl'
-        });
-    };
+        // $stateProvider.state('login', {
+        //     url: '/login',
+        //     templateUrl: 'app/login/login.html',
+        //     controller: 'loginController',
+        //     controllerAs: 'loginCtrl'
+        // });
+    }
 
 })();

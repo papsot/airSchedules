@@ -15,6 +15,9 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
+body {
+  font-family: 'Roboto'; }
+
 /*!
   Ionicons, v2.0.1
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
@@ -9817,31 +9820,51 @@ a.button {
 
 .login {
   background-image: url("../img/login-small.png");
-  background-size: 100% 100%;
-  font-family: "Roboto";
-  color: #eee; }
-  .login .logo {
-    font-family: "Righteous";
-    font-size: 30px;
-    padding-top: 100px;
-    padding-bottom: 140px; }
+  color: #eee;
+  font-family: "Roboto"; }
+  @media (min-height: 551px) {
+    .login .logo-row {
+      font-family: "Righteous";
+      font-size: 30px;
+      padding-top: 100px;
+      padding-bottom: 140px; } }
+  @media (max-height: 551px) {
+    .login .logo-row {
+      font-family: "Righteous";
+      font-size: 30px;
+      padding-top: 50px;
+      padding-bottom: 50px; } }
   .login form input {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
     color: #eee;
     font-size: 16px;
     height: 50px;
-    width: 100%;
     margin: 10px 0px;
     padding: 0px 8px;
-    background: rgba(255, 255, 255, 0.2);
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    transition: all .3s ease-in-out; }
+    transition: all .3s ease-in-out;
+    width: 100%; }
     .login form input:focus {
-      border: 2px solid rgba(255, 255, 255, 0.7); }
+      border: 2px solid rgba(255, 255, 255, 0.8); }
+    .login form input::placeholder {
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 14px; }
   .login form .button {
     background: rgba(255, 255, 255, 0.7);
     border-radius: 5px;
     color: #336083;
     font-size: 18px; }
+  .login .sign-up-row {
+    background: transparent;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    text-align: center;
+    width: 100%; }
+    .login .sign-up-row div {
+      font-size: 14px; }
+      .login .sign-up-row div span {
+        color: #37b0ff; }
 
 @font-face {
   font-family: "Roboto";

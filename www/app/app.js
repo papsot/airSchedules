@@ -1,4 +1,18 @@
 (function () {
+
+	// Initialize Firebase
+	// var config = {
+	// 	apiKey: "AIzaSyAt0QgLu3SdSpAmbuw2RGhxN-_NZ4jxhW4",
+	// 	authDomain: "airschedules.firebaseapp.com",
+	// 	databaseURL: "https://airschedules.firebaseio.com",
+	// 	projectId: "airschedules",
+	// 	storageBucket: "airschedules.appspot.com",
+	// 	messagingSenderId: "1033945425237"
+	// };
+	// firebase.initializeApp(config);
+
+
+
 	// Ionic Starter App
 
 	// angular.module is a global place for creating, registering and retrieving Angular modules
@@ -7,7 +21,8 @@
 	angular.module('airSchedules', [
 		'ionic',
 		'ui.router',
-		'airSchedules.login'
+		'airSchedules.login',
+		'airSchedules.container'
 	]);
 
 	angular.module('airSchedules')

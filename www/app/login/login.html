@@ -1,7 +1,7 @@
 <ion-view class="login">
     <ion-content>
 
-        <div class="row logo">
+        <div class="row logo-row">
             <div class="col text-center">
                 AirSchedules
             </div>
@@ -9,16 +9,29 @@
         <form action="">
             <div class="row">
                 <div class="col col-offset-10 col-80">
-                    <input type="text" placeholder="insert username" ng-model="username">
-                    <input type="text" placeholder="insert password" ng-model="password">
+                    <input type="text" placeholder="username" ng-model="username">
+                    <input type="text" placeholder="password" ng-model="password">
                 </div>
             </div>
             <div class="row">
                 <div class="col col-offset-10 col-80">
-                    <button class="button button-full">Login</button>
+                    <!--<button class="button button-full" ui-sref="container">Login</button>-->
+                    <button class="button button-full" on-tap="login()">Login</button>
                 </div>
             </div>
         </form>
 
+        <div class="row sign-up-row">
+            <div class="col col-offset-10 col-80">
+                Don't have an account? <span>Sign up</span>
+            </div>
+        </div>
+
     </ion-content>
+
+    <!--<ion-footer-bar class="login-footer hide-on-keyboard-open">
+        <div class="title text-center">
+            Don't have an account? <span ui-sref="signup">Sign Up</span>
+        </div>
+    </ion-footer-bar>-->
 </ion-view>
