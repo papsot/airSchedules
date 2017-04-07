@@ -1,13 +1,24 @@
-<ion-view>
+<ion-view class="login">
     <ion-content>
-        <div class="row">
-            <div class="col"></div>
-            <div class="col col-80">
-                <input type="text" placeholder="insert username" ng-model="username">
-                <input type="text" placeholder="insert password" ng-model="password">
+
+        <div class="row logo">
+            <div class="col text-center">
+                AirSchedules
             </div>
-            <div class="col"></div>
         </div>
+        <form action="">
+            <div class="row">
+                <div class="col col-offset-10 col-80">
+                    <input type="text" placeholder="insert username" ng-model="username">
+                    <input type="text" placeholder="insert password" ng-model="password">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-offset-10 col-80">
+                    <button class="button button-full">Login</button>
+                </div>
+            </div>
+        </form>
 
     </ion-content>
 </ion-view>
